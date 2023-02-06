@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "47968969695",
+    "project_id": "projeto-autenticar-spotify",
+    "storage_bucket": "projeto-autenticar-spotify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47968969695:android:66a00eac6b516a199c5a6a",
+        "android_client_info": {
+          "package_name": "com.felipe.projetospotify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47968969695-bj0demqk3g6treqovobsajem17s67reh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFA64nmwUD9VHyWcFOZ8UnQFAP2ms28lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47968969695-bj0demqk3g6treqovobsajem17s67reh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

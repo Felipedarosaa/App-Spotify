@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button">
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+    <style name="bt_entrar">
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:background">@drawable/button_entrar</item>
+    </style>
+
+    <style name="datePicker">
+        <item name="android:calendarTextColor">@color/white</item>
+    </style>
+
+</resources>

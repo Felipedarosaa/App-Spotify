@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Barra de rolagem-->
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".FormLogin"
+        tools:ignore="ExtraText">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_spotify" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Falta pouco."
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+        <TextView
+            android:id="@+id/genero"
+            android:layout_width="260sp"
+            android:layout_height="30sp"
+            android:layout_marginBottom="16dp"
+            android:text="Qual é o seu gênero?"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="228dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RadioButton
+                android:id="@+id/Feminino"
+                android:layout_width="300sp"
+                android:layout_height="55sp"
+                android:background="@drawable/radio_button"
+                android:text="Feminino"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                tools:layout_editor_absoluteX="59dp"
+                tools:layout_editor_absoluteY="419dp" />
+
+            <RadioButton
+                android:id="@+id/Masculino"
+                android:layout_width="300sp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/radio_button"
+                android:text="Masculino"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:id="@+id/Outro"
+                android:layout_width="300sp"
+                android:layout_height="55sp"
+                android:background="@drawable/radio_button"
+                android:text="Outro"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/inscrever"
+            style="@style/Button"
+            android:layout_width="320sp"
+            android:layout_height="50sp"
+            android:text="ENTRE NO SPOTIFY"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.604"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="260sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="20dp"
+            android:text="Qual é a sua data de nascimento?"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/datePicker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="330sp"
+            android:layout_height="75sp"
+            android:layout_marginTop="40sp"
+            android:background="@color/gray"
+            android:calendarTextColor="@color/white"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            app:layout_constraintBottom_toTopOf="@+id/genero"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/voltar"
+            android:layout_width="100sp"
+            android:layout_height="30sp"
+            android:gravity="center"
+            android:text="VOLTAR"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inscrever"
+            app:layout_constraintVertical_bias="0.305" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

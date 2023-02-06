@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Barra de rolagem-->
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".FormLogin"
+        tools:ignore="ExtraText">
+
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_spotify" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Inscrever-se em uma conta grátis do Spotify"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+
+        <EditText
+            android:id="@+id/ciarEmail"
+            android:layout_width="320sp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="-2dp"
+            android:background="@color/gray"
+            android:drawableRight="@drawable/ic_email"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/criarSenha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.527"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/criarSenha"
+            android:layout_width="320sp"
+            android:layout_height="40dp"
+            android:layout_marginTop="76dp"
+            android:background="@color/gray"
+            android:drawableRight="@drawable/ic_senha"
+            android:hint="Crie uma senha"
+            android:inputType="textPassword"
+            android:paddingLeft="18dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/criarNome"
+            android:layout_width="320sp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray"
+            android:hint="Como devemos chamar você?"
+            android:paddingLeft="18dp"
+            android:drawableRight="@drawable/ic_person"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/criarSenha" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/inscrever"
+            style="@style/Button"
+            android:layout_width="320sp"
+            android:layout_height="50sp"
+            android:text="CONTINUAR"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.412"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/criarNome"
+            app:layout_constraintVertical_bias="0.108" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="320sp"
+            android:layout_height="wrap_content"
+            android:text="Aceito os Termos e Condições de Uso do Spotify e a Política de Privacidade."
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.419"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inscrever"
+            app:layout_constraintVertical_bias="0.153" />
+
+
+        <TextView
+            android:id="@+id/voltar"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="VOLTAR"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox"
+            app:layout_constraintVertical_bias="0.164" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
